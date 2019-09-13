@@ -1,7 +1,7 @@
-#Server Setup For Python Development
+# Server Setup For Python Development
 This repository contains a script that installs vim extensions for easy python development, byobu terminal multiplexer (wrapper around tmux) and gdrive library for communicating with Google Drive from shell.
 
-###Vim Extensions:
+### Vim Extensions:
 - Python Indent (https://github.com/vim-scripts/indentpython.vim)
 - Jedi Vim (https://github.com/davidhalter/jedi-vim)
 - SuperTab (https://github.com/ervandew/supertab)
@@ -15,12 +15,12 @@ This repository contains a script that installs vim extensions for easy python d
 - NERD Commenter (https://github.com/scrooloose/nerdcommenter)
 - CtrlP (https://github.com/kien/ctrlp.vim)
 
-###Vim ColorScheme
+### Vim ColorScheme
 - Darcula (https://github.com/blueshirts/darcula)
 
-###Byobu
+### Byobu
 - Byobu (https://www.digitalocean.com/community/tutorials/how-to-install-and-use-byobu-for-terminal-management-on-ubuntu-16-04)
 
-###gDrive
+### gDrive
 - version 2.1.0 (https://github.com/gdrive-org/gdrive)
 
