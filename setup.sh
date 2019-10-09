@@ -1,22 +1,18 @@
 #!/bin/bash
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
+sudo apt-get install python-dev python-pip python3-dev python3-pip
+sudo apt install python3-neovim
 
-sudo apt install -y vim-gtk
-echo 'Creating vim dir'
-mkdir ${HOME}/.vim/
-echo 'Creating bundle dir'
-mkdir ${HOME}/.vim/bundle/
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir $HOME/.config
+mkdir $HOME/.config/nvim
+mkdir $HOME/.config/nvim/colors
+mkdir $HOME/.config/nvim/plugged
 
-{
-	echo "set -g default-terminal '${TERM}'" >> "$HOME/.byobu/.tmux.conf"
-} ||
-{
-	echo "set -g default-terminal '${TERM}'" >> "$HOME/.config/byobu/.tmux.conf"
-
-}
-sudo apt install -y byobu
-mkdir $HOME/.vim/colors
-wget https://raw.githubusercontent.com/blueshirts/darcula/master/colors/darcula.vim -P $HOME/.vim/colors
-ln -s $HOME/server-setup-editor/.vimrc $HOME/.vimrc
 sudo cp gdrive /usr/bin/
-vim -c PluginInstall
+
+ln -s $HOME/server-setup-editor/init.vim $HOME/.config/nvim/init.vim
+
+
+nvim -c PlugInstall
